@@ -40,11 +40,11 @@ jobs:
       uses: actions/checkout@v2
     - name: Executing python main()
       env: 
-        github_url: ${{ secrets.GIT_URL }}
+        github_url: https://api.github.com
         org_name: ${{ github.event.inputs.org }}
         owner: ${{ github.repository_owner }}
-        git_user: ${{ secrets.USERNAME}}
-        token: ${{ secrets.PAT}}
+        git_user: Amoghgiri
+        token: ${{ secrets.token}}
         repo: ${{ github.event.inputs.repo }}
         member: ${{ github.event.inputs.Collaborator}}
       run: |
