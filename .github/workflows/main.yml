@@ -7,7 +7,7 @@ on:
       repo:
         description: 'Repository name'     
         required: true
-      org:
+      owner:
         type: choice
         description: Select Organization
         options:
