@@ -1,14 +1,6 @@
 name: repo create
 
 on:
- issues:
-    types: [opened, edited, milestoned]
-    inputs: 
-    repo: "Myrepo001"
-    org: "Appu-Test-org"
-    Collaborator: "appuraj-philips"
-    
- 
  
  workflow_dispatch:
     inputs:
@@ -19,8 +11,8 @@ on:
         type: choice
         description: Select Organization
         options:
-        - philips-test-org
-        - Appu-Test-org
+        - Amogh-Sdm-Org
+        - Test-org
         - Unit-II-Org
       
       Collaborator:
